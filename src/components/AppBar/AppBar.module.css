@@ -1,0 +1,12 @@
+.content {
+  background-color: #ff8928;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+}

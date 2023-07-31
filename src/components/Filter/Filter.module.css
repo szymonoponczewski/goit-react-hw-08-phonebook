@@ -1,13 +1,20 @@
+.Label {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 10px;
+}
 
 .input {
-  padding: 5px;
-  width: 200px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  padding: 12px 15px;
+  border: 3px solid #ccc;
+  transition: border-color 0.5s;
+  outline: none;
+  border-radius: 5px;
 }
 
 .input:focus {
-  outline: none;
-  border-color: #80bdff;
-  box-shadow: 0 0 0 2px #80bdff;
+  border-color: #007bff;
 }

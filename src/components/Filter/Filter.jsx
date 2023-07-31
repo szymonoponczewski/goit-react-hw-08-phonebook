@@ -1,16 +1,24 @@
-import { filterContact } from "../../redux/filterSlice";
 import { useDispatch } from "react-redux";
+import { filterContact } from "../../redux/contacts/filterSlice";
+import css from "./Filter.module.css";
 
 export const Filter = () => {
   const dispatch = useDispatch();
 
-  const handleInputChange = (event) =>
-    dispatch(filterContact(event.target.value));
+  const handleFilter = (event) => {
+    const filterValue = event.target.value;
+    dispatch(filterContact(filterValue));
+  };
 
   return (
-    <>
-      <h3>Search contacts by name</h3>
-      <input onChange={handleInputChange} />
-    </>
+    <label className={css.Label}>
+      Search contacts by name
+      <input
+        type="text"
+        placeholder="Search..."
+        onChange={handleFilter}
+        className={css.input}
+      />
+    </label>
   );
 };

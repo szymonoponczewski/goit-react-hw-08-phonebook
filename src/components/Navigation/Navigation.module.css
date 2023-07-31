@@ -1,0 +1,17 @@
+.element {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-left: 60px;
+}
+
+.link {
+  color: #375f1b;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 19px;
+}
+
+.link:hover {
+  color: #66b032;
+}
