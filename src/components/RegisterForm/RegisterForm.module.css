@@ -16,11 +16,10 @@
   border: 3px solid #ccc;
   transition: border-color 0.5s;
   outline: none;
-  border-radius: 5px;
 }
 
 .input:focus {
-  border-color: #618685;
+  border-color: #feda6a;
 }
 
 .button {
@@ -28,8 +27,9 @@
   width: 80px;
   height: 15px;
   font-size: 16px;
-  background: transparent;
-  color: #98e462;
+  background: #feda6a;
+  color: #000;
+  transition: 0.35s;
   cursor: pointer;
   padding: 10px 15px;
   display: flex;
@@ -40,19 +40,18 @@
   -webkit-user-select: none;
   touch-action: manipulation;
   margin-top: 10px;
+  border-radius: 10px;
 }
 
 .button:hover {
-  box-shadow: 0 0 0 2px #98e462;
-  border: none;
+  box-shadow: 0 0 0 4px #6b7a8f;
 }
 
 .link {
   font-weight: bold;
   text-decoration: none;
-  color: #375f1b;
+  color: #feda6a;
 }
-
 .link:hover {
-  color: #66b032;
+  text-decoration: underline;
 }

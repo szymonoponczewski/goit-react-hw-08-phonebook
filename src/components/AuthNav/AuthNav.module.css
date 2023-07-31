@@ -9,8 +9,8 @@
   font-weight: 600;
   text-decoration: none;
   font-size: 19px;
-  transition: background-color 0.2s ease, transform 0.3s ease;
-  color: black;
+  transition: 0.35s;
+  color: #fff;
 }
 
 .element:hover {

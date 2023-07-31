@@ -26,13 +26,13 @@ export const ContactList = () => {
     <ul>
       {filteredContacts.map((contact) => (
         <li key={contact.id} className={css.element}>
-          {contact.name}: {contact.number}
           <button
             onClick={() => handleDelete(contact.id)}
             className={css.button}
           >
             X
           </button>
+          {contact.name}: {contact.number}
         </li>
       ))}
     </ul>
