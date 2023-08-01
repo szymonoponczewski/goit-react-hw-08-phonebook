@@ -35,12 +35,12 @@ export const LoginForm = () => {
         <button type="submit" className={css.button}>
           Sign in
         </button>
-       <p>
-  New user? Sign up{" "}
-  <Link to="/goit-react-hw-08-phonebook/register" className={css.link}>
-    here
-  </Link>
-</p>
+        <p>
+          New user? Sign up{" "}
+          <Link to="/register" className={css.link}>
+            here
+          </Link>
+        </p>
       </form>
     </div>
   );

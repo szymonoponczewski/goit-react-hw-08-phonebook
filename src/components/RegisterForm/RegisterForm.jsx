@@ -1,4 +1,5 @@
 import { useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 import { register } from "../../redux/auth/operations";
 import css from "./RegisterForm.module.css";
 
@@ -49,11 +50,10 @@ export const RegisterForm = () => {
           Sign up
         </button>
         <p>
-          Already a user? Please sign in
-          <a href="/goit-react-hw-08-phonebook/login" className={css.link}>
-            {" "}
+          Already a user? Please sign in{" "}
+          <Link to="/login" className={css.link}>
             here
-          </a>
+          </Link>
         </p>
       </form>
     </div>
