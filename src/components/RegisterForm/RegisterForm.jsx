@@ -35,6 +35,7 @@ export const RegisterForm = () => {
             type="email"
             name="email"
             placeholder="email"
+            autoComplete="email"
             className={css.input}
           />
         </label>
@@ -43,6 +44,7 @@ export const RegisterForm = () => {
             type="password"
             name="password"
             placeholder="password"
+            autoComplete="current-password"
             className={css.input}
           />
         </label>

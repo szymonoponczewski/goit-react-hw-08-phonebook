@@ -1,3 +1,4 @@
+import React from "react";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { logIn } from "../../redux/auth/operations";
@@ -21,6 +22,7 @@ export const LoginForm = () => {
             type="email"
             name="email"
             placeholder="email"
+            autoComplete="email"
             className={css.input}
           />
         </label>
@@ -29,6 +31,7 @@ export const LoginForm = () => {
             type="password"
             name="password"
             placeholder="password"
+            autoComplete="current-password"
             className={css.input}
           />
         </label>
