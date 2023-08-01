@@ -10,7 +10,7 @@ const StyledLink = styled(NavLink)`
   transition: transform 0.35s;
 
   &.active {
-    color: orange;
+    color: #feda6a;
   }
 `;
 
