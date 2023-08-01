@@ -36,7 +36,7 @@ export const LoginForm = () => {
         </button>
         <p>
           New user? Sign up
-          <a href="szymonoponczewski.github.io/goit-react-hw-08-phonebook/register" className={css.link}>
+          <a href="/goit-react-hw-08-phonebook/register" className={css.link}>
             {" "}
             here
           </a>
