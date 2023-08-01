@@ -5,14 +5,6 @@
   align-items: center;
 }
 
-.element {
-  font-weight: 600;
-  text-decoration: none;
-  font-size: 19px;
-  transition: 0.35s;
-  color: #fff;
-}
-
 .element:hover {
   transform: scale(1.1);
 }
