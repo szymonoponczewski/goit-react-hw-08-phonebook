@@ -8,28 +8,25 @@ export const ContactForm = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-
-    const form = event.target;
-    const name = form.elements.name.value;
-    const number = form.elements.number.value;
-
-    const contact = {
-      name,
-      number,
-    };
+    const { name, number } = event.target.elements;
 
     const contactExists = contacts.some(
       (existingContact) =>
-        existingContact.name === name && existingContact.number === number
+        existingContact.name === name.value &&
+        existingContact.number === number.value
     );
 
     if (contactExists) {
-      form.reset();
-      return alert(`${name} is already in phonebook`);
-    }
+      alert(`${name.value} is already in the phonebook`);
+    } else {
+      const contact = {
+        name: name.value,
+        number: number.value,
+      };
 
-    dispatch(addContact(contact));
-    form.reset();
+      dispatch(addContact(contact));
+      event.target.reset();
+    }
   };
 
   return (

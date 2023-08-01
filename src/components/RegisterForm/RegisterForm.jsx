@@ -7,15 +7,15 @@ export const RegisterForm = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const form = event.target;
-    const registerElements = {
-      name: form.elements.username.value,
-      email: form.elements.email.value,
-      password: form.elements.password.value,
-    };
-
-    dispatch(register(registerElements));
-    form.reset();
+    const { username, email, password } = event.target.elements;
+    dispatch(
+      register({
+        name: username.value,
+        email: email.value,
+        password: password.value,
+      })
+    );
+    event.target.reset();
   };
 
   return (
